@@ -8,7 +8,7 @@ const MenuItem = props => {
                 margin: "10px"
             }}>
                 <CardBody>
-                    <CardImg src={props.dish.image} width="100%" alt={props.dish.name}
+                    <CardImg src={props.dish.image} width="100%" height="200px" alt={props.dish.name}
                     style={{
                         opacity: "0.5"
                     }}/>

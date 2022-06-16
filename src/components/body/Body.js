@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Page404 from './Page404';
 import { Route, Routes } from "react-router-dom";
+import {CardColumns, Modal, ModalBody, ModalFooter, Button} from 'reactstrap';
 
 const Body = () => {
     return (
