@@ -28,6 +28,8 @@ toggleModal = () => {
 }
 
     render(){
+        document.title = "Menu";
+
         //component list start
         const menu = this.state.dishes.map(item => {
             return(
