@@ -7,11 +7,13 @@ class Menu extends Component {
         dishes: DISHES
     }
     render(){
+        //component list start
         const menu = this.state.dishes.map(item => {
             return(
                 <MenuItem dish={item} key={item.id}/>
             )
         })
+        //component list end
         return (
             <div className="container">
                 <div className="row">
