@@ -8,45 +8,8 @@ const DISHES = [
         price: '120',
         featured: true,
         description: 'A unique combination of Indian Uthappam (pancake) & Italian biriyani, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies & Buffalo paneer.',
-        comments: [
-            {
-                id: 0,
-                rating: 4.5,
-                comment: "Amagine",
-                author: "Shanto",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 1,
-                rating: 5,
-                comment: "Good",
-                author: "Dipak",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 2,
-                rating: 4.4,
-                comment: "Testy",
-                author: "Pradip",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 3,
-                rating: 4.5,
-                comment: "Amagine",
-                author: "Ajay",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4,
-                rating: 5,
-                comment: "Amagine",
-                author: "Pranay",
-                date: "2021-10-16T17:57:28.556094Z"
-            }
-        ]
     },
-          
+       
     {
         id: 1,
         name: 'Pizza',
@@ -56,43 +19,6 @@ const DISHES = [
         price: '80',
         featured: false,
         description: 'A unique combination of Indian Uthappam (pancake) & Italian biriyani, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies & Buffalo paneer.',
-        comments: [
-            {
-                id: 0,
-                rating: 4.5,
-                comment: "Amagine",
-                author: "Rajek",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4.1,
-                rating: 5,
-                comment: "Good",
-                author: "Adesh",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4.2,
-                rating: 5,
-                comment: "Testy",
-                author: "Manas",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4.3,
-                rating: 5,
-                comment: "Amagine",
-                author: "Bhagi",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4,
-                rating: 4.9,
-                comment: "Amagine",
-                author: "Pranab",
-                date: "2021-10-16T17:57:28.556094Z"
-            }
-        ]
     },
 
     {
@@ -104,44 +30,6 @@ const DISHES = [
         price: '150',
         featured: false,
         description: 'A unique combination of Indian Uthappam (pancake) & Italian biriyani, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies & Buffalo paneer.',
-        comments: [
-            {
-                id: 0,
-                rating: 5,
-                comment: "Amagine",
-                author: "Sujit",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4.1,
-                rating: 5,
-                comment: "Good",
-                author: "Ashis",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 2,
-                rating: 4.7,
-                comment: "Testy",
-                author: "Shiva",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 3,
-                rating: 4.5,
-                comment: "Amagine",
-                author: "Manosh",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4,
-                rating: 4,
-                comment: "Amagine",
-                author: "Kajal",
-                date: "2021-10-16T17:57:28.556094Z"
-            }
-        ]
-   
     },
     {
         id: 3,
@@ -152,44 +40,6 @@ const DISHES = [
         price: '140',
         featured: false,
         description: 'A unique combination of Indian Uthappam (pancake) & Italian biriyani, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies & Buffalo paneer.',
-        comments: [
-            {
-                id: 0,
-                rating: 4.5,
-                comment: "Amagine",
-                author: "Rajav",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 3.9,
-                rating: 5,
-                comment: "Good",
-                author: "Papon",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4.8,
-                rating: 5,
-                comment: "Testy",
-                author: "Kamal",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 3,
-                rating: 5,
-                comment: "Amagine",
-                author: "Ranit",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4,
-                rating: 4.8,
-                comment: "Amagine",
-                author: "Pranav",
-                date: "2021-10-16T17:57:28.556094Z"
-            }
-        ]
-       
     },
     {
         id: 4,
@@ -199,44 +49,7 @@ const DISHES = [
         label: 'hot',
         price: '140',
         featured: false,
-        description: 'A unique combination of Indian Uthappam (pancake) & Italian biriyani, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies & Buffalo paneer.',
-        comments: [
-            {
-                id: 0,
-                rating: 4.9,
-                comment: "Amagine",
-                author: "Jasik",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 1,
-                rating: 4.7,
-                comment: "Good",
-                author: "Vivas",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 2,
-                rating: 5,
-                comment: "Testy",
-                author: "Sudip",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 3,
-                rating: 4.5,
-                comment: "Amagine",
-                author: "Madhu",
-                date: "2021-10-16T17:57:28.556094Z"
-            },
-            {
-                id: 4,
-                rating: 5,
-                comment: "Amagine",
-                author: "Akash",
-                date: "2021-10-16T17:57:28.556094Z"
-            }
-        ]
+        description: 'A unique combination of Indian Uthappam (pancake) & Italian biriyani, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies & Buffalo paneer.'
      
     }
 ]
