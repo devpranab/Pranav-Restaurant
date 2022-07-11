@@ -7,7 +7,6 @@ import {addComment} from '../../redux/actionCreators';
 
 //Accessing Redux Store from Components
 const mapStateToProps = state => {
-    //console.log("mapStateToProps: ", state);
     return{
         dishes: state.dishes,
         comments: state.comments
@@ -29,7 +28,6 @@ class Menu extends Component {
 
   // onDishSelect function start
 onDishSelect = dish => {
-    //console.log(dish);
     this.setState({selectedDish: dish});
     this.toggleModal();
 }
@@ -43,7 +41,6 @@ toggleModal = () => {
 
     render(){
         document.title = "Menu";
-
         //component list start
         const menu = this.props.dishes.map(item => {
             return(
