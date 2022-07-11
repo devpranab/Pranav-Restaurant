@@ -13,6 +13,21 @@ const mapStateToProps = state => {
     }
 }
 
+//define dispatch function
+const mapDispatchToProps = dispatch => {
+    return{
+        addComment: (dishId, author, rating, comment) => dispatch({
+            type: 'ADD_COMMENT',
+            payload: {
+                dishId: dishId,
+                author: author,
+                rating: rating,
+                comment: comment
+              }
+        })
+    }
+}
+
 class Menu extends Component {
     state = {
         selectedDish: null,
@@ -54,7 +69,8 @@ toggleModal = () => {
            )
             dishDetail = <DishDetail 
             dish={this.state.selectedDish}
-            comments={comments}/>
+            comments={comments}
+            addComment={this.props.addComment}/>
         }
         // conditional rendering end
         return (
@@ -86,4 +102,4 @@ toggleModal = () => {
     } 
 };
 
-export default connect (mapStateToProps) (Menu);
+export default connect (mapStateToProps, mapDispatchToProps) (Menu);
