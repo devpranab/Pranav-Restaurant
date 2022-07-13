@@ -3,7 +3,7 @@ import DishDetail from './DishDetail';
 import MenuItem from './MenuItem';
 import {Modal, ModalBody, ModalFooter, Button, CardColumns} from 'reactstrap';
 import {connect} from 'react-redux';
-import {addComment, fetchDishes} from '../../redux/actionCreators';
+import {addComment, fetchDishes, fetchComments} from '../../redux/actionCreators';
 import Loading from './Loading';
 
 //Accessing Redux Store from Components
@@ -20,7 +20,8 @@ const mapDispatchToProps = dispatch => {
         //1st Dispatch function
         addComment: (dishId, author, rating, comment) => dispatch(addComment(dishId, author, rating, comment)),
         //2nd Dispatch function
-        fetchDishes: () => dispatch(fetchDishes())
+        fetchDishes: () => dispatch(fetchDishes()),
+        fetchComments: () => dispatch(fetchComments())
     }
 }
 
@@ -45,6 +46,7 @@ toggleModal = () => {
 
 componentDidMount(){
     this.props.fetchDishes();
+    this.props.fetchComments();
 }
 
     render(){
@@ -69,12 +71,13 @@ componentDidMount(){
 // conditional rendering start
 let dishDetail = null;
 if(this.state.selectedDish != null){
-    const comments = this.props.comments.filter(comment => comment.dishId === this.state.selectedDish.id
+    const comments = this.props.comments.comments.filter(comment => comment.dishId === this.state.selectedDish.id
    )
     dishDetail = <DishDetail 
     dish={this.state.selectedDish}
     comments={comments}
-    addComment={this.props.addComment}/>
+    addComment={this.props.addComment}
+    commentsIsLoading={this.props.isLoading}/>
 }
 // conditional rendering end
 return (
