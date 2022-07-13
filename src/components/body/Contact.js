@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
-import {LocalForm, Control, Errors} from 'react-redux-form';
+import { Button, FormGroup, Label, Col } from "reactstrap";
+import {Form, Control, Errors, actions} from 'react-redux-form';
+import { connect } from "react-redux";
+
+const mapDispatchToPrps = dispatch => {
+    return{
+        resetFeedbackForm: () => {
+            dispatch(actions.reset('feedback'))
+        }
+    }
+}
 
 //Validation method start
 //return true or false depends on condition
@@ -14,6 +23,7 @@ class Contact extends Component {
     //handleSubmit function
     handleSubmit = values => {
      console.log(values);
+     this.props.resetFeedbackForm();
     }
 
     render(){
@@ -30,7 +40,7 @@ class Contact extends Component {
             }}>Send us your Feedback</h3>
         </div>
         <div className="col-12 col-md-7">
-            <LocalForm onSubmit={values => this.handleSubmit(values)}>
+            <Form model="feedback" onSubmit={values => this.handleSubmit(values)}>
                  <FormGroup row>
                     <Label htmtfor="fullname" md={2}>Full Name</Label>
                     <Col md={10}>
@@ -142,7 +152,7 @@ class Contact extends Component {
                 </Col>
               </FormGroup>
                 
-            </LocalForm>
+            </Form>
         </div>
      </div>
     </div>
@@ -150,4 +160,4 @@ class Contact extends Component {
  }
 };
 
-export default Contact;
+export default connect(null, mapDispatchToPrps)(Contact);
