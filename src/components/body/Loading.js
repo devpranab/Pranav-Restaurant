@@ -9,4 +9,6 @@ const Loading = () => {
     );
 };
 
+//3. Using Fontawesome in Project
+
 export default Loading;
