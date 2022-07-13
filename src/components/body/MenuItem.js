@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card, CardTitle, CardImg, CardImgOverlay, CardBody, CardText} from "reactstrap";
+import { baseURL } from '../../redux/baseURL';
 
 const MenuItem = props => {
     return (
@@ -8,7 +9,7 @@ const MenuItem = props => {
                 margin: "10px"
             }}>
                 <CardBody>
-                    <CardImg src={props.dish.image} width="100%" height="200px" alt={props.dish.name}
+                    <CardImg src={baseURL + props.dish.image} width="100%" height="200px" alt={props.dish.name}
                     style={{
                         opacity: "0.5"
                     }}/>
